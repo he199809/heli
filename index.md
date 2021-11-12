@@ -1,8 +1,10 @@
-## 何力的个人主页
+ 何力的个人主页
+ ----
  
  理论是灰色的，生命之树常青。
  
 ## 基本信息
+
  ### 何力：
  
 ### 邮箱：heli457715046@gmail.com
@@ -15,20 +17,28 @@
  本科：同济大学
  
  研究生：名古屋大学
+ 
+ 
+ 
+ ## 讲义
+ 正在建设中
+ 
+ 
+ 
+ 
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 
 
 
-## 
-## 
+
 
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
+
 Syntax highlighted code block
 
 
@@ -42,7 +52,7 @@ Syntax highlighted code block
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
-```
+
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
