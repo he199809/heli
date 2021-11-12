@@ -1,4 +1,4 @@
-<center><font color=#B8860B>何力的个人主页</font></center>
+<center>何力的个人主页</center>
 --------------
 
 <p align="right">----理论是灰色的，生命之树常青。</p>
