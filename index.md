@@ -1,65 +1,29 @@
- 何力的个人主页
- ----
- 
- 理论是灰色的，生命之树常青。
- 
+何力的个人主页
+--------------
+
+理论是灰色的，生命之树常青。
+
+---
+
 ## 基本信息
 
- ### 何力：
- 
-### 邮箱：heli457715046@gmail.com
- 
- ### 指导老师： [Lars Hesselholt](https://www.math.nagoya-u.ac.jp/~larsh/)
- 
- ### 方向：目前正在学习凝聚态数学，无穷范畴，谱代数几何。
- 
- ### 学校：
- 本科：同济大学
- 
- 研究生：名古屋大学
- 
- 
- 
- ## 讲义
- 正在建设中
- 
- 
- 
- 
+#### 邮箱：heli457715046@gmail.com
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+#### 指导老师： [Lars Hesselholt](https://www.math.nagoya-u.ac.jp/~larsh/)
+
+#### 方向：目前正在学习凝聚态数学，无穷范畴，谱代数几何。
+
+#### 学历：
+
+```
+本科：同济大学
+研究生：名古屋大学
+```
 
 
 
 
 
+## 讲义
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-
-Syntax highlighted code block
-
-
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/he199809/heli/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+正在建设中
