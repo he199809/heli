@@ -27,6 +27,6 @@ Master: Nagoya University
 ## 讲义
 [Anima and Spectra](/An&Sp.pdf)
 
- [Condensed Mathematics Notes] (/Condensed%20Mathematics_Notes.pdf)
+[Condensed Mathematics Notes](/Condensed%20Mathematics_Notes.pdf)
 
 
