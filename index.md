@@ -16,7 +16,7 @@
 condensed mathematics, higher algebra.
 
 #### Background：
-Undergraduate：Tongji University
+Undergraduate: Tongji University
 
 Master: Nagoya University
 
@@ -24,7 +24,7 @@ Master: Nagoya University
 
 
 
-## 讲义
+## Notes
 [Anima and Spectra](/An&Sp.pdf)
 
 [Condensed Mathematics Notes](/Condensed%20Mathematics_Notes.pdf)
