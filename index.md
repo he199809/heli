@@ -25,6 +25,8 @@ Master: Nagoya University
 
 
 ## 讲义
-[An&Sp](/An&Sp.pdf)
+[Anima and Spectra](/An&Sp.pdf)
 
-[Google](http://www.google.com/)
+ [Condensed Mathematics Notes] (https://github.com/he199809/heli/blob/gh-pages/Condensed%20Mathematics_Notes.pdf)
+
+
