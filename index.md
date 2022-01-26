@@ -28,6 +28,6 @@ Master: Nagoya University
 [Anima and Spectra](/An&Sp.pdf)
 
 
-[Condensed Mathematics Notes](/Condensed Mathematics_Notes.pdf)
+[Condensed Mathematics_Notes](/Condensed Mathematics_Notes.pdf)
 
 
