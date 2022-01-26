@@ -6,19 +6,19 @@
 
 ---
 
-## 基本信息
+## Introduction
 
-#### 邮箱：[heli457715046@gmail.com](heli457715046@gmail.com)
+#### Email：[heli457715046@gmail.com](heli457715046@gmail.com)
 
-#### 指导老师： [Lars Hesselholt](https://www.math.nagoya-u.ac.jp/~larsh/)
+#### Advisor： [Lars Hesselholt](https://www.math.nagoya-u.ac.jp/~larsh/)
 
 #### 方向：
-目前正在学习凝聚态数学，无穷范畴，谱代数几何。
+condensed mathematics, higher algebra.
 
 #### 学历：
-本科：同济大学
+Undergraduate：Tongji University
 
-研究生：名古屋大学
+Master: Nagoya University
 
 
 
