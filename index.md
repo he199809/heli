@@ -12,10 +12,10 @@
 
 #### Advisor： [Lars Hesselholt](https://www.math.nagoya-u.ac.jp/~larsh/)
 
-#### 方向：
+#### My interest in：
 condensed mathematics, higher algebra.
 
-#### 学历：
+#### Background：
 Undergraduate：Tongji University
 
 Master: Nagoya University
