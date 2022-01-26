@@ -8,7 +8,7 @@
 
 ## 基本信息
 
-#### 邮箱：(heli457715046@gmail.com)
+#### 邮箱：[heli457715046@gmail.com](heli457715046@gmail.com)
 
 #### 指导老师： [Lars Hesselholt](https://www.math.nagoya-u.ac.jp/~larsh/)
 
