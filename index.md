@@ -27,6 +27,6 @@ Master: Nagoya University
 ## Notes
 [Anima and Spectra](/An&Sp.pdf)
 
-[Condensed Mathematics Notes](/Condensed Mathematics_Notes.pdf)
+[Condensed Mathematics Notes](https://github.com/he199809/heli/blob/gh-pages/Condensed%20Mathematics_Notes.pdf)
 
 
