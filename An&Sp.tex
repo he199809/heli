@@ -1,0 +1,546 @@
+\documentclass[UTF8,12,a4paper]{ctexart}
+%\documentclass[13pt]{extarticle}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{latexsym}
+\usepackage{setspace}   %设置行距的宏包
+\usepackage{fancyhdr}
+%\usepackage{geometry}   %设置页边距的宏包
+\usepackage{titlesec}   %设置页眉页脚的宏包
+\usepackage{tikz-cd}    %画交换图的宏包 
+\usepackage{enumerate}
+\usepackage{color}
+%\usepackage{extsizes}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+\usepackage[all]{xy}
+\tcbuselibrary{skins, breakable, theorems}
+\usepackage{enumerate}
+%\usepackage{boondox-cal}
+\usepackage{times}
+\usepackage{bm}
+\renewcommand{\baselinestretch}{1.4}
+
+%\geometry{a4paper}%
+%\geometry{left=3cm,right=2.5cm,top=2.5cm,bottom=2.5cm}  %设置 上、左、下、右 页边距
+\pagestyle{plain}
+
+
+%\newtcolorbox{mybox}{colback = red!25!white, colframe = red!75!black}
+\definecolor{darkgreen}{rgb}{0,0.35,0}
+\newtcolorbox{mybox}[2][]{width=10cm,colback = red!5!white, colframe = green!75!black, fonttitle = \bfseries,colbacktitle = red!55!yellow, enhanced,attach boxed title to top left={yshift=-2mm},	title=#2,#1}
+%\newtcbtheorem{question}{}
+%{enhanced, breakable,
+%	colback = white, colframe = cyan, colbacktitle = cyan,
+%	attach boxed title to top left = {yshift = -2mm, xshift = 5mm},
+%	boxed title style = {sharp corners},
+%	fonttitle = \sffamily\bfseries, separator sign = {).~}}{qst}
+
+
+
+\theoremstyle{definition}
+
+\newtheorem{thm}{{Theorem}\hspace{0.05pt}}[section]
+\newtheorem{prop}[thm]{{Proposition}\hspace{0.05pt}}
+\newtheorem{cor}[thm]{Corollary\hspace{0.05pt}}
+\newtheorem{lem}[thm]{{Lemma}\hspace{0.05pt}}
+\newtheorem{dfn}[thm]{{Definition}\hspace{0.05pt}}
+\newtheorem{rem}[thm]{{Remark}\hspace{0.05pt}}
+\newtheorem{exm}[thm]{{Example}\hspace{0.05pt}}
+
+
+
+\newtheorem*{Q}{{Question}\hspace{0.05pt}}
+\newtheorem*{A}{{Answer}\hspace{0.05pt}}
+\newtheorem*{property}{{Property}\hspace{0.05pt}}
+
+
+
+\newtheorem{conj}{Open Problem\hspace{0.05pt}}
+\newtheorem*{prob}{Problem\hspace{0.05pt}}
+\newtheorem*{fact}{{Fact}\hspace{0.05pt}}
+\newtheorem{ex}{ \hspace{0.05pt}}[section]
+
+
+\newtheorem*{cexm}{{Counterexample}\hspace{0.05pt}}
+
+\newtheorem*{ntt}{{Notation}\hspace{0.05pt}}
+%\newtheorem*{dfn*}{Definition\hspace{0.05pt}}
+%\newtheorem{note}[thm]{Note}
+\newtheorem*{pf}{Proof}
+\newtheorem*{Solution}{Solution}
+\usepackage[top=3.2cm,bottom=3.8cm,left=3.0cm,right=3.0cm]{geometry}
+%\newcommand{\Spec}{\mathrm{Spec}\ }
+%\newcommand{\Gal}{\mathrm{Gal}\ }
+\newcommand{\q}{\mathfrak{q}}
+\newcommand{\p}{\mathfrak{p}}
+\newcommand{\m}{\mathfrak{m}}
+%\newcommand{\a}{\mathfrak{a}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\G}{\mathcal{G}}
+%\newcommand{\H}{\mathcal{H}}
+\newcommand{\Cond}{\text{Cond}}
+\newcommand{\An}{\text{An}}
+\newcommand{\Sp}{\text{Sp}}
+
+
+
+
+
+\begin{document}
+\large
+\title{\vspace{-6em}\Large{An and Sp}}
+\date{}
+\author{何力(Li HE) 322101140}
+\maketitle
+\section{An and Sp}
+\subsection{An and $\An_*$}
+\dfn
+Denote the category of all Kan complexes by $\text{Kan}$, and define an $\infty$-category
+$\text{An}=N(\text{Kan})$, we call $\An$ the $\infty$-category of anima, and its objects are called anima.\\
+Similarly, denote the category of all pointed Kan complexes by $\text{Kan}_*$, and define an $\infty$-category
+$\text{An}_*=N(\text{Kan}_*)$, we call $\An_*$ the $\infty$-category of pointed anima, and its objects are called pointed anima.
+
+
+\dfn 
+For $X\in \An_*$, define $\Sigma X:=\text{cofib}(X\rightarrow 0)$ and 
+$\Omega X:=\text{fib}(0\rightarrow X)$, i.e. we have a pushout square
+\begin{equation*}
+\xymatrix{
+	X\ar[r] \ar[d]&0\ar[d]\\
+	0^\prime \ar[r]& \Sigma X
+}
+\end{equation*}
+and a pullback square
+\begin{equation*}
+\xymatrix{
+	\Omega X\ar[r] \ar[d]&0\ar[d]\\
+	0^\prime \ar[r]&  X
+}
+\end{equation*}
+We call $\Sigma:\An_*\rightarrow \An_*$ the suspension functor and 
+$\Omega: \An_*\rightarrow \An_*$ the loop space functor. 
+
+
+
+\prop 
+For $X, Y\in \An_*$, we have a natural equivalence:
+$$
+\text{Map}_{\An_*}(\Sigma X, Y)\simeq 
+\text{Map}_{\An_*}(X,\Omega Y).
+$$
+\pf 
+\begin{align*}
+\text{Map}_{\An_*}(\Sigma X,Y)
+&\simeq 
+\text{Map}_{\text{Fun}(\Lambda^2_0,\An_*)}
+(0\gets X\to 0, Y\gets Y\to Y)\\
+&\simeq
+\text{Map}_{\An_*}(0,Y)
+\times_{\text{Map}_{\An_*}( X,Y)}
+\text{Map}_{\An_*}( X,Y)
+\times_{\text{Map}_{\An_*}( X,Y)}
+\text{Map}_{\An_*}(0,Y)\\
+&\simeq 
+\text{Map}_{\text{Fun}(\Lambda^2_2,\An_*)}
+(X\to X\gets X, 0\to Y\gets 0)\\
+&\simeq
+\text{Map}_{\An_*}( X,\Omega Y).
+\end{align*}
+\qed 
+
+
+
+\rem
+$\An_*$ is generated under colimits by $\{S^n: n\geq 0\}.$
+
+\prop 
+The $\infty$-category $\An$ admits all small limits and colimits.
+\pf Ref Theorem[4.3.3.7].
+
+\prop 
+\begin{itemize}
+	\item [(1)]The forgetful functor $\An_*\rightarrow \An $ commutes with filtered colimits.
+	\item [(2)]In the $\infty$-category $\An$, filtered colimits commute with limits.
+	\item [(3)]
+	$\pi_0:\An\rightarrow \text{Set}$ commutes with all colimits, and therefore 
+	$$\pi_n:\An_*\stackrel{\Omega^n}{\longrightarrow} \An_*\stackrel{\text{fgt}}{\longrightarrow} \An\stackrel{\pi_0}{\longrightarrow} \text{Set}$$
+	commutes with filtered colimits, for any $n\geq 1$.
+\end{itemize}
+
+
+
+
+
+
+
+
+
+\newpage
+\subsection{Sp}
+\dfn 
+A spectrum is 
+$E=\{E_n,\delta_n: E_n\stackrel{\sim}{\rightarrow}\Omega E_{n+1} \}_{n\in\mathbb{Z}}$, where $E_n\in \An_*$, for all $n\in\mathbb{Z}$. We denote the $\infty$-category of all spectra by $\Sp$.\\
+
+We have a pair of adjoint functors 
+$(\Sigma^\infty,\Omega^\infty):\An_*\rightarrow \Sp$, here we mean 
+$\Sigma^\infty\dashv \Omega^\infty.$ We can define them as follows:
+\begin{align*}
+\Omega^\infty:\Sp\rightarrow \An_*;\  
+ \{E_n,\delta_n: E_n\stackrel{\sim}{\rightarrow}\Omega E_{n+1} \}_{n\in\mathbb{Z}}\mapsto E_0,
+\end{align*}
+and
+$$
+\Sigma^\infty:\An_*\rightarrow \Sp;\ 
+X\mapsto\Sigma^\infty X=\{Q\Sigma^n X, Q\Sigma^n X\stackrel{\sim}{\rightarrow}\Omega Q\Sigma^{n+1} X\}_{n\in \mathbb{Z}}.
+$$
+Here, $Q:\An_*\rightarrow \An_*$ is defined by
+$$
+QX:=\text{colim}(X\rightarrow \Omega\Sigma X\rightarrow \Omega^2\Sigma^2 X\rightarrow\cdots).
+$$
+\rem
+We have:
+\begin{align*}
+\Omega Q\Sigma X
+&\simeq \Omega\ \text{colim}(\Sigma X \rightarrow \Omega\Sigma \Sigma X\rightarrow \Omega^2\Sigma^2 \Sigma X\rightarrow\cdots)\\
+&\simeq \text{colim} ( \Omega\Sigma X\rightarrow \Omega^2\Sigma^2 X\rightarrow\cdots)\\
+&\simeq QX.
+\end{align*}
+
+\exm 
+\begin{itemize}
+	\item [(1)]
+	For $A\in\text{Ab}$, we define $HA\in \Sp$ to be
+	$$
+	\{K(A,n), \delta: K(A,n)\stackrel{\sim}{\rightarrow} K(A,n+1) \}_{n\geq 0}.
+	$$
+	In fact, $H:\text{Ab}\rightarrow \Sp$ is a fully faithful functor. And we have $\Omega^\infty HA=A.$
+      \item [(ii)] The sphere spectrum is defined to be
+$\mathbb{S}:=\Sigma^\infty S^0$, where $S^0\in \An_*.$ 
+\end{itemize}
+
+
+
+
+
+
+\dfn 
+The suspension functor $\Sigma$ and loop space functor $\Omega$ on $\Sp$ are defined as follows:
+$$
+\Sigma:\Sp\rightarrow \Sp;\ 
+E=\{E_n \}_{n\in\mathbb{Z}}
+\mapsto 
+\Sigma E=\{E_{n+1}\}_{n\in \mathbb{Z}},
+$$
+and
+$$
+\Omega:\Sp\rightarrow \Sp;\ 
+E=\{E_n \}_{n\in\mathbb{Z}}
+\mapsto 
+\Omega E=\{E_{n-1}\}_{n\in \mathbb{Z}}.
+$$
+Hence from the definition we know that $\Sigma$ and $\Omega$ are inverse to each other, so we can denote by $\Omega=\Sigma^{-1}$ and $\Sigma=\Omega^{-1}.$
+
+\dfn 
+For $E=\{E_n,\delta_n: E_n\stackrel{\sim}{\rightarrow}\Omega E_{n+1} \}_{n\in\mathbb{Z}}\in \Sp$ and 
+$F=\{F_n,\delta_n: F_n\stackrel{\sim}{\rightarrow}\Omega F_{n+1} \}_{n\in\mathbb{Z}}\in \Sp$, define
+\begin{align*}
+\text{Map}_\Sp(E,F)
+:&=
+\underset{n}{\text{lim}}
+(\cdots \leftarrow \text{Map}_{\An_*}(E_0,F_0)\leftarrow
+\text{Map}_{\An_*}(E_1,F_1)\leftarrow\cdots)\\
+&=\underset{n}{\text{lim}}\ \text{Map}_{\An_*}(E_n,F_n).
+\end{align*}
+
+
+~\\
+We next show that $\Sp$ has all limits and all colimits.
+
+
+
+\prop
+The $\infty$-category $\Sp$ admits all limits and  filtered colimits. More concretely, 
+\begin{itemize}
+	\item [(1)]
+	Assume $E:I\rightarrow \Sp$ is a limit daigram, then $\underset{I}{\text{lim}}\ E$ exists, and is given by
+		$$
+		\{\underset{I}{\text{lim}}\ E(i)_n, \delta_n:
+	\underset{I}{\text{lim}}\ E(i)_n\stackrel{\sim}{\rightarrow}
+		\Omega\  \underset{I}{\text{lim}}\ E(i)_{n+1}\}.
+		$$
+		\item [(2)]
+		Assume $E:I\rightarrow \Sp$ is a filtered colimit daigram, then $\underset{I}{\text{colim}}\ E$ exists, and is given by
+		$$
+		\{\underset{I}{\text{colim}}\ E(i)_n, \delta_n:
+		\underset{I}{\text{colim}}\ E(i)_n\stackrel{\sim}{\rightarrow}
+		\Omega\  \underset{I}{\text{colim}}\ E(i)_{n+1}\}.
+		$$
+\end{itemize}
+\pf 
+We have 
+\begin{align*}
+\text{Map}_\Sp(F, \{\underset{I}{\text{lim}}\ E(i)_n\})
+&\simeq \underset{n}{\text{lim}}\ 
+\text{Map}_{\An_*}(F_n, \underset{I}{\text{lim}}\ E(i)_n)\\
+&\simeq \underset{n}{\text{lim}}\  \underset{I}{\text{lim}}\ 
+\text{Map}_{\An_*}(F_n,E(i)_n)\\
+&\simeq  \underset{I}{\text{lim}}\ 
+\text{Map}_{\Sp}(F,E(i)),
+\end{align*} 
+ which means $\{\underset{I}{\text{lim}}\ E(i)_n\}$ is the limit of $E(i).$ \\
+For the filtered colimit case, the proof is similar.
+\qed
+ 
+
+
+
+
+Since the functor $\Omega:\An_*\rightarrow \An_*$ commutes with all limits and filtered colimits, we can define the limits and filtered colimits in $\Sp$ pointwise. However, since $\Omega:\An_*\rightarrow \An_*$ is not commute with all colimits, we cannot define the colimits in $\Sp$ pointwise.
+
+In order to show that $\Sp$ has all colimits, we introduce the concept of prespectrum.
+\dfn 
+\begin{itemize}
+	\item [(1)]A prespectrum is 
+	$E=\{E_n,\delta_n: \Sigma E_n \rightarrow  E_{n+1} \}_{n\in\mathbb{Z}}$, where $E_n\in \An_*$, for all $n\in\mathbb{Z}$. We denote the $\infty$-category of all prespectra by $\text{PSp}$.
+	\item [(2)] For a prespectrum $\{E_n,\delta_n:\Sigma E_n \rightarrow  E_{n+1} \}_{n\in\mathbb{Z}}$, we define its associated spectrum to be
+	$$
+	\text{colim}
+	(\Sigma^\infty E_0\rightarrow \Omega \Sigma^\infty E_1\rightarrow
+	 \Omega^2 \Sigma^\infty E_2\rightarrow \cdots)
+	 =\text{colim}(\Omega^n \Sigma^\infty E_n).
+	$$
+\end{itemize}
+
+\exm 
+For $X\in\An_*$, we have a prespectrum
+$\{\Sigma^n X, \Sigma \Sigma^n X\rightarrow \Sigma^{n+1}X\}.$ Its associated spectrum is $\Sigma^\infty X$, since
+$$
+\text{colim}(\Omega^n \Sigma^\infty \Sigma^n X)
+=\text{colim}(\Omega^n \Sigma^n\Sigma^\infty  X)
+=\text{colim}(\Sigma^\infty  X)
+=\Sigma^\infty  X.
+$$
+
+\lem 
+For $E\in \Sp$, we have $E\simeq \text{colim}(\Omega^n \Sigma^\infty  E_n)$.
+\pf 
+For any $F\in \Sp$, 
+\begin{align*}
+\text{Map}_\Sp(\text{colim}\ \Omega^n \Sigma^\infty  E_n, F)
+&\simeq \text{lim}\ \text{Map}_\Sp(\Omega^n \Sigma^\infty  E_n, F)\\
+&\simeq \text{lim}\ \text{Map}_{\An_*}(  E_n,\Omega^\infty \Sigma^n F)\\
+&\simeq \text{lim}\ \text{Map}_{\An_*}(  E_n,F_n)\\
+&\simeq \text{Map}_\Sp(E, F),
+\end{align*}
+then by Yoneda, we have $E\simeq \text{colim}(\Omega^n \Sigma^\infty  E_n)$.
+\qed
+
+\prop 
+$\Sp$ has all colimits.
+\pf Assume $E:I\rightarrow \Sp$ is a colimit diagram, then we form a prespectrum
+$\{\underset{I}{\text{colim}}\  E(i)_n, 
+\delta_n: \Sigma \underset{I}{\text{colim}}\  E(i)_n\rightarrow 
+\underset{I}{\text{colim}}\  E(i)_{n+1}\}.$ We claim that its associated spectrum is the colimit of the diagram $E:I\rightarrow \Sp:$
+\begin{align*}
+\text{Map}_\Sp(\underset{n}{\text{colim}}\ \Omega^n\Sigma^\infty \underset{I}{\text{colim}}\  E(i)_n, F )
+&\simeq 
+\underset{n}{\text{lim}}\ \text{Map}_\Sp(\Sigma^\infty \underset{I}{\text{colim}}\  E(i)_n,\Sigma^n F )\\
+&\simeq 
+\underset{n}{\text{lim}}\ \text{Map}_{\An_*}( \underset{I}{\text{colim}}\  E(i)_n,\Omega^\infty \Sigma^n F )\\
+&\simeq 
+\underset{n}{\text{lim}}\ \underset{I}{\text{lim}}\ \text{Map}_{\An_*}(  E(i)_n,F_n )\\
+&\simeq 
+\underset{I}{\text{lim}}\ \underset{n}{\text{lim}}\ \text{Map}_{\An_*}(  E(i)_n,F_n )\\
+&\simeq 
+\underset{I}{\text{lim}}\ \text{Map}_{\Sp}(  E(i),F).
+\end{align*}
+Hence $\underset{n}{\text{colim}}\ \Omega^n\Sigma^\infty \underset{I}{\text{colim}}\  E(i)_n\in \Sp $ is the colimit of the diagram $E:I\rightarrow \Sp$.
+Therefore, $\Sp$ has all colimits.
+\qed
+
+
+
+
+
+
+~\\
+\prop
+For $X\in \An_*$, and $E\in \Sp$, we have a natural equivalence:
+$$
+\text{Map}_\Sp(\Sigma^\infty X, E)\simeq 
+\text{Map}_{\An_*}(X,\Omega^\infty E). 
+$$
+\pf 
+\begin{align*}
+\text{Map}_\Sp(\Sigma^\infty X, E)
+&\simeq  \underset{n}{\text{lim}}\ 
+\text{Map}_{\An_*}((\Sigma^\infty X)_n,E_n)\\
+&\simeq  \underset{n}{\text{lim}}\ 
+\text{Map}_{\An_*}(Q\Sigma^n X,E_n)\\
+&\simeq  \underset{n}{\text{lim}}\ 
+\text{Map}_{\An_*}(\underset{m}{\text{colim}}\ \Omega^m\Sigma^{n+m} X,E_n)\\
+&\simeq  \underset{n}{\text{lim}}\ \underset{m}{\text{lim}}\ 
+\text{Map}_{\An_*}(\Omega^m\Sigma^{n+m} X,E_n)\\
+&\simeq \text{Map}_{\An_*}(X, E_0)\\
+&\simeq \text{Map}_{\An_*}(X,\Omega^\infty E). 
+\end{align*}
+\qed
+
+\exm 
+Assume $K\in\text{An}_*$ is finite, then we have
+\begin{align*}
+\text{Map}_\Sp(\Sigma^\infty K, \Sigma^\infty X)
+&\simeq \text{Map}_{\An_*}( K, \Omega^\infty\Sigma^\infty X)\\
+&\simeq \text{Map}_{\An_*}( K,\text{colim } \Omega^k\Sigma^k X)\\
+&\simeq \text{colim } \text{Map}_{\An_*}( K,\Omega^k\Sigma^k X)\\
+&\simeq \text{colim } \text{Map}_{\An_*}(\Sigma^k K,\Sigma^k X).
+\end{align*}
+
+
+
+
+
+\prop [Stability]
+In the $\infty$-category $\Sp$, a square
+\begin{equation*}
+\xymatrix{
+	X_0\ar[r] \ar[d]&X_1\ar[d]\\
+	X_2 \ar[r]& X_{12}
+}
+\end{equation*}
+ is a pullback iff it is a pushout.
+
+
+\dfn
+\begin{itemize}
+	\item [(i)] For $E, F\in\Sp$, $[E,F]:=\pi_0\text{Map}_\Sp(E,F).$
+	\item [(ii)] For $E\in \Sp$, define $\pi_n E:=[\Sigma^n\mathbb{S}, E]=\pi_n\text{Map}_\Sp(\mathbb{S},E).$
+	\item [(iii)] $E\in \Sp$ is a connective spectrum, if $\pi_n E\simeq 0$, $\forall n<0.$ We denote the $\infty$-category of connective spectra by $\Sp_{\geq 0}.$
+\end{itemize} 
+~\\
+For any $E\in\Sp$, we have
+$$\text{Map}_\Sp(\mathbb{S},E)\simeq \text{Map}_{\An_*}(S^0,\Omega^\infty E)\simeq \Omega^\infty E.$$
+So $\pi_n E\simeq \pi_n \text{Map}_\Sp(\mathbb{S},E)\simeq 
+\pi_n \Omega^\infty E. $
+
+
+\exm
+For $X\in\An_*$, $\Sigma^\infty X\in \Sp$, then
+\begin{equation*}
+\pi_n(\Sigma^\infty X)=\left\{
+\begin{aligned}
+0 & &n<0\\
+\pi_n^s(X)& &n\geq 0
+\end{aligned}
+\right.
+\end{equation*}
+\pf 
+For $n\geq 0$, we have:
+\begin{align*}
+\pi_n(\Sigma^\infty X)
+&=\pi_n(\Omega^\infty\Sigma^\infty X)
+=\pi_n(\underset{k}{\text{colim}}\ \Omega^k\Sigma^k X)\\
+&=\underset{k}{\text{colim}}\  \pi_n (\Omega^k\Sigma^k X)
+=\underset{k}{\text{colim}}\  \pi_{n+k} (\Sigma^k X)
+=\pi_n^s(X).
+\end{align*}
+
+
+
+
+
+\dfn 
+\begin{itemize}
+	\item [(i)]
+	For $E, F\in\Sp$, define $\text{map}(E,F)\in \Sp$ as follows:
+	$$
+	\text{map}(E,F)
+	:=\{\text{Map}_\Sp(E,\Sigma^n F), \delta_n:
+	\text{Map}_\Sp(E,\Sigma^n F)\stackrel{\sim}{\rightarrow}
+	\Omega \text{Map}_\Sp(E,\Sigma^{n+1} F)\}_{n\in\mathbb{Z}}.
+	$$
+	\item [(ii)] For $E, F\in\Sp$, define $E\otimes F\in \Sp$ as follows:
+	$$
+	E\otimes F:=\underset{n,m}{\text{colim}}\ \Omega^{n+m}\Sigma^\infty(E_n\wedge F_m).
+	$$
+\end{itemize}
+
+\rem 
+By definition, we know that for $E, F\in\Sp$, $E\otimes F\simeq F\otimes E$.
+
+
+
+\prop 
+For $E,F,K\in \Sp$, there is a natural equivalence:
+$$
+\text{Map}_\Sp(E\otimes F, K)\simeq \text{Map}_\Sp(E,\text{map}(F,K)).
+$$
+\pf 
+\begin{align*}
+\text{Map}_\Sp(E\otimes F, K)
+&\simeq \text{Map}_\Sp(\underset{n,m}{\text{colim}}\ \Omega^{n+m}\Sigma^\infty(E_n\wedge F_m), K)\\
+&\simeq \underset{n,m}{\text{lim}}\  \text{Map}_\Sp
+(\Omega^{n+m}\Sigma^\infty(E_n\wedge F_m), K)\\
+&\simeq \underset{n,m}{\text{lim}}\  \text{Map}_\Sp
+(\Sigma^\infty(E_n\wedge F_m),\Sigma^{n+m} K)\\
+&\simeq \underset{n,m}{\text{lim}}\  \text{Map}_{\An_*}
+(E_n\wedge F_m,\Omega^\infty \Sigma^{n+m} K)\\
+&\simeq \underset{n,m}{\text{lim}}\  \text{Map}_{\An_*}
+(E_n,\text{Map}_{\An_*}(F_m,\Omega^\infty \Sigma^{n+m} K))\\
+&\simeq \underset{n,m}{\text{lim}}\  \text{Map}_{\An_*}
+(E_n,\text{Map}_{\An_*}(F_m,(\Sigma^n K)_m))\\
+&\simeq \underset{n}{\text{lim}}\  \text{Map}_{\An_*}
+(E_n,\underset{m}{\text{lim}}\ \text{Map}_{\An_*}(F_m,(\Sigma^n K)_m))\\
+&\simeq \underset{n}{\text{lim}}\  \text{Map}_{\An_*}
+(E_n,\text{Map}_{\Sp}(F,\Sigma^n K))\\
+&\simeq \underset{n}{\text{lim}}\  \text{Map}_{\An_*}
+(E_n,\text{map}(F,K)_n)\\
+&\simeq  \text{Map}_{\Sp}
+(E,\text{map}(F,K)).
+\end{align*}
+\qed
+
+
+\prop 
+For $X, Y\in \An_*$,
+$$\Sigma^\infty X\otimes \Sigma^\infty Y\simeq
+\Sigma^\infty(X\wedge Y)$$.
+\pf For any $E\in\Sp$,
+\begin{align*}
+\text{Map}_{\Sp}(\Sigma^\infty X\otimes \Sigma^\infty Y,E)
+&\simeq \text{Map}_{\Sp}(\Sigma^\infty X,\text{map}(\Sigma^\infty Y,E))\\
+&\simeq \text{Map}_{\An_*}(X,\Omega^\infty \text{map}(\Sigma^\infty Y,E))\\
+&\simeq \text{Map}_{\An_*}(X,\text{Map}_{\Sp}(\Sigma^\infty Y,E))\\
+&\simeq \text{Map}_{\An_*}(X,\text{Map}_{\An_*}( Y,\Omega^\infty E))\\
+&\simeq \text{Map}_{\An_*}(X\wedge Y,\Omega^\infty E)\\
+&\simeq \text{Map}_{\An_*}(\Sigma^\infty (X\wedge Y),E),
+\end{align*}
+then by Yoneda's lemma, we have: 
+$\Sigma^\infty X\otimes \Sigma^\infty Y\simeq
+\Sigma^\infty(X\wedge Y).$
+\qed 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
