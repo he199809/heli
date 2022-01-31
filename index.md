@@ -3,7 +3,9 @@
 
 <p align="right">理论是灰色的，生命之树常青。</p>
 
-<p align="right">Grau, teurer Freund, ist alle Theorie, Und grün des Lebens goldner Baum.</p>
+<p align="right">Grau, teurer Freund, ist alle Theorie, </p>
+  
+ <p align="right"> Und grün des Lebens goldner Baum.</p>
 
 ---
 
