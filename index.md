@@ -11,7 +11,7 @@
 
 ## Introduction
 
-#### Email：[heli457715046@gmail.com](heli457715046@gmail.com)
+#### Email：[heli457715046@gmail.com](gmail.com)
 
 #### Advisor： [Lars Hesselholt](https://www.math.nagoya-u.ac.jp/~larsh/)
 
