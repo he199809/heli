@@ -48,3 +48,5 @@ Master: Nagoya University
 &emsp; 
 [Jacob Lurie](https://www.math.ias.edu/~lurie/)
 
+[Ruochuan Liu(刘若川)](https://bicmr.pku.edu.cn/~ruochuan/)
+
