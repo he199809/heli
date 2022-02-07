@@ -41,6 +41,8 @@ Master: Nagoya University
 [Kiran Kedlaya](https://kskedlaya.org/)
 &emsp; 
 [Bhargav Bhatt](http://www-personal.umich.edu/~bhattb/)
+&emsp; 
+[Brian Conrad](http://virtualmath1.stanford.edu/~conrad/)
 
 [Akhil Mathew](https://math.uchicago.edu/~amathew/)
 &emsp; 
