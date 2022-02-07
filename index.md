@@ -34,8 +34,10 @@ Master: Nagoya University
 [Condensed Mathematics_Notes](/CondensedMathematics_Notes.pdf)
 
 
-## Some Personal Homepage
+## Some Personal Homepages
 
+[Peter Scholze](http://www.math.uni-bonn.de/people/scholze/)
 
+[Kiran Kedlaya](https://kskedlaya.org/)
 
 
