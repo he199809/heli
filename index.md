@@ -56,7 +56,8 @@ Master: Nagoya University
 
 
 
-
+## Some URLs
+[The K-book: an introduction to algebraic K-theory](https://sites.math.rutgers.edu/~weibel/Kbook.html)
 
 
 
