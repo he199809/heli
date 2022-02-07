@@ -59,6 +59,7 @@ Master: Nagoya University
 ## Some URLs
 [The K-book: an introduction to algebraic K-theory](https://sites.math.rutgers.edu/~weibel/Kbook.html)
 
+[Algebraic de Rham cohomology](https://sites.google.com/view/algebraicderham/home)
 
 
 
