@@ -52,6 +52,8 @@ Master: Nagoya University
 &emsp; 
 [Ravi Vakil](https://virtualmath1.stanford.edu/~vakil/)
 
+[Thomas Nikolaus](https://www.uni-muenster.de/IVV5WS/WebHop/user/nikolaus/index.html)
+
 [Ruochuan Liu(刘若川)](https://bicmr.pku.edu.cn/~ruochuan/)
 &emsp;
 [Guozhen Wang(王国祯)](https://pouiyter.github.io/)
@@ -66,4 +68,6 @@ Master: Nagoya University
 [Algebraic de Rham cohomology](https://sites.google.com/view/algebraicderham/home)
 
 [Modular Representations of Finite Groups](http://sporadic.stanford.edu/modrep/index.html)
+
+[Prismatic cohomology](https://kskedlaya.org/prismatic/sec_overview.html)
 
