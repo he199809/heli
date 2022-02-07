@@ -52,7 +52,14 @@ Master: Nagoya University
 &emsp; 
 [Ravi Vakil](https://virtualmath1.stanford.edu/~vakil/)
 
+
+
 [Thomas Nikolaus](https://www.uni-muenster.de/IVV5WS/WebHop/user/nikolaus/index.html)
+&emsp; 
+[Emily Riehl](https://emilyriehl.github.io/)
+
+
+
 
 [Ruochuan Liu(刘若川)](https://bicmr.pku.edu.cn/~ruochuan/)
 &emsp;
