@@ -40,4 +40,11 @@ Master: Nagoya University
 
 [Kiran Kedlaya](https://kskedlaya.org/)
 
+[Bhargav Bhatt](http://www-personal.umich.edu/~bhattb/)
+
+[Akhil Mathew](https://math.uchicago.edu/~amathew/)
+
+[Jared Weinstein](https://sites.google.com/view/jared-weinstein/home)
+
+
 
