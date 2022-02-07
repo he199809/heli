@@ -61,5 +61,5 @@ Master: Nagoya University
 
 [Algebraic de Rham cohomology](https://sites.google.com/view/algebraicderham/home)
 
-
+[Modular Representations of Finite Groups](http://sporadic.stanford.edu/modrep/index.html)
 
