@@ -34,3 +34,8 @@ Master: Nagoya University
 [Condensed Mathematics_Notes](/CondensedMathematics_Notes.pdf)
 
 
+## Some Personal Homepage
+
+
+
+
