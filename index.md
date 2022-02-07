@@ -49,6 +49,8 @@ Master: Nagoya University
 [Jared Weinstein](https://sites.google.com/view/jared-weinstein/home)
 &emsp; 
 [Jacob Lurie](https://www.math.ias.edu/~lurie/)
+&emsp; 
+[Ravi Vakil](https://virtualmath1.stanford.edu/~vakil/)
 
 [Ruochuan Liu(刘若川)](https://bicmr.pku.edu.cn/~ruochuan/)
 &emsp;
