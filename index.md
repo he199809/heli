@@ -37,13 +37,13 @@ Master: Nagoya University
 ## Some Personal Homepages
 
 [Peter Scholze](http://www.math.uni-bonn.de/people/scholze/)
-
+&emsp; 
 [Kiran Kedlaya](https://kskedlaya.org/)
-
+&emsp; 
 [Bhargav Bhatt](http://www-personal.umich.edu/~bhattb/)
 
 [Akhil Mathew](https://math.uchicago.edu/~amathew/)
-
+&emsp; 
 [Jared Weinstein](https://sites.google.com/view/jared-weinstein/home)
 &emsp; 
 [Jacob Lurie](https://www.math.ias.edu/~lurie/)
