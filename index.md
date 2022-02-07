@@ -45,6 +45,5 @@ Master: Nagoya University
 [Akhil Mathew](https://math.uchicago.edu/~amathew/)
 
 [Jared Weinstein](https://sites.google.com/view/jared-weinstein/home)
-
-
+[Jacob Lurie](https://www.math.ias.edu/~lurie/)
 
