@@ -24,7 +24,7 @@ Undergraduate: Tongji University
 Master: Nagoya University
 
 ## Seminars
-[HTT](https://sites.google.com/view/httseminar/)
+[Higher Algebra](https://sites.google.com/view/httseminar/)
 
 
 ## Notes
