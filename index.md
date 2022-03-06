@@ -28,6 +28,7 @@ Master: Nagoya University
 ## Seminars
 [Higher Algebra](https://sites.google.com/view/httseminar/)
 
+[zemi](https://sites.google.com/view/zemiseminar/)
 
 ## Notes
 [Anima and Spectra](/An&Sp.pdf)
