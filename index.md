@@ -15,10 +15,10 @@
 
 #### Advisor： [Lars Hesselholt](https://www.math.nagoya-u.ac.jp/~larsh/)
 
-[study](https://he199809.github.io/study/)
+
 
 #### My interest in：
-condensed mathematics, higher algebra.
+condensed mathematics, higher algebra, p-adic geometry.
 
 #### Background：
 Undergraduate: Tongji University
@@ -28,7 +28,10 @@ Master: Nagoya University
 ## Seminars
 [Higher Algebra](https://sites.google.com/view/httseminar/)
 
-[zemi](https://sites.google.com/view/zemiseminar/)
+[Perfectoid Spaces](https://sites.google.com/view/zemiseminar/)
+
+[Study](https://he199809.github.io/study/)
+
 
 ## Notes
 [Anima and Spectra](/An&Sp.pdf)
@@ -75,8 +78,8 @@ Master: Nagoya University
 [Zhiyu Zhang](https://math.mit.edu/~zzyzhang/)
 &emsp;
 [Zeyu Liu](https://mathweb.ucsd.edu/~zeliu/zeyu_html/)
-
-[何通木](https://sites.google.com/view/tongmu)
+&emsp;
+[Tongmu He](https://sites.google.com/view/tongmu)
 
 ## Some URLs
 [The K-book: an introduction to algebraic K-theory](https://sites.math.rutgers.edu/~weibel/Kbook.html)
