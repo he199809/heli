@@ -18,12 +18,12 @@
 
 
 #### My interest in：
-condensed mathematics, higher algebra, p-adic geometry.
+homotopy theory, p-adic geometry.
 
 #### Background：
-Undergraduate: Tongji University
+Undergraduate: Tongji University(2016.09--2020.07)
 
-Master: Nagoya University
+Master: Nagoya University(2021.04--)
 
 ## Seminars
 [Higher Algebra](https://sites.google.com/view/httseminar/)
@@ -37,7 +37,7 @@ Master: Nagoya University
 [Anima and Spectra](/An&Sp.pdf)
 
 
-[Condensed Mathematics_Notes](/CondensedMathematics_Notes.pdf)
+[Condensed Mathematics](/CondensedMathematics_Notes.pdf)
 
 
 ## Some Personal Homepages
@@ -67,13 +67,13 @@ Master: Nagoya University
 
 
 
-[Ruochuan Liu(刘若川)](https://bicmr.pku.edu.cn/~ruochuan/)
+[Ruochuan Liu](https://bicmr.pku.edu.cn/~ruochuan/)
 &emsp;
-[Guozhen Wang(王国祯)](https://pouiyter.github.io/)
+[Guozhen Wang](https://pouiyter.github.io/)
 &emsp;
-[Liang Xiao(肖梁)](https://bicmr.pku.edu.cn/~lxiao/)
+[Liang Xiao](https://bicmr.pku.edu.cn/~lxiao/)
 
-[Zhouli Xu(徐宙利)](https://sites.google.com/view/xuzhouli)
+[Zhouli Xu](https://sites.google.com/view/xuzhouli)
 &emsp;
 [Zhiyu Zhang](https://math.mit.edu/~zzyzhang/)
 &emsp;
